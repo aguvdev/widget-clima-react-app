@@ -1,0 +1,20 @@
+.weatherContainer{
+  width: 450px;
+  margin: 20px auto;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 50px 50px 0 0;
+}
+
+.current {
+  background: rgb(30, 107, 221);
+  background: linear-gradient(
+    45deg,
+    rgb(30, 107, 221) 0%,
+    rgb(3, 116, 255) 42%,
+    rgb(3, 191, 255) 100%
+  );
+  border-radius: 40px 40px 0 0;
+  padding: 40px;
+}
