@@ -1,0 +1,50 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.city {
+  margin-top: 10px;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 0 10px;
+}
+
+.country {
+  font-size: 20px;
+  text-align: center;
+}
+
+.condition {
+  font-size: 24px;
+}
+
+.current {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.item svg {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
+}
+
+.type {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.value {
+  font-size: 18px;
+}
