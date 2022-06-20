@@ -8,7 +8,7 @@ import WeatherMap from "./weatherMap";
 export default function WeatherApp() {
   const [weather, setWeather] = useState(null);
 
-  console.log({ styles });
+  console.log(weather);
   useEffect(() => {
     loadInfo();
   }, []);
