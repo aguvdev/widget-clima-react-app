@@ -4,6 +4,7 @@ import WeatherMainInfo from "./weatherMainInfo";
 
 import styles from "./weatherApp.module.css";
 import WeatherMap from "./weatherMap";
+import Loading from "./loading";
 
 export default function WeatherApp() {
   const [weather, setWeather] = useState(null);
@@ -25,7 +26,9 @@ export default function WeatherApp() {
 
       const json = await request.json();
 
-      setWeather(json);
+      setTimeout(() => {
+        setWeather(json);
+      }, 1000);
 
       console.log(json);
     } catch (error) {}
@@ -40,10 +43,10 @@ export default function WeatherApp() {
   return (
     <div className={styles.weatherContainer}>
       <div className={styles.current}>
-      <WeatherForm onChangeCity={handleChangeCity} />
-      <WeatherMainInfo weather={weather} />
+        <WeatherForm onChangeCity={handleChangeCity} />
+        {weather ? <WeatherMainInfo weather={weather} /> : <Loading />}
       </div>
-      <WeatherMap weather={weather} />
+      {weather ? <WeatherMap weather={weather} /> : <Loading />}
     </div>
   );
 }
